@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Game2048</string>
+    <string name="score_title">Score</string>
+    <string name="record_title">Record</string>
+    <string name="revert_name">REVERT</string>
+    <string name="restart_name">RESTART</string>
+    <string name="options_name">OPTIONS</string>
+</resources>

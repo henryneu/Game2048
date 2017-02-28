@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_main_interface"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="henry.neu.cn.game2048.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/display_game_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/layout_margin">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_goal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/text_margin"
+                android:background="@drawable/orange_button"
+                android:gravity="center"
+                android:padding="@dimen/textview_padding"
+                android:text="2048"
+                android:textSize="@dimen/goal_text_size" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/textview_margin"
+                android:background="@drawable/gray_button"
+                android:gravity="center"
+                android:text="@string/score_title"
+                android:textSize="@dimen/score_title_text_size" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/score_title"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/textview_margin"
+                android:background="@drawable/light_orange_button"
+                android:gravity="center"
+                android:text="10000"
+                android:textSize="@dimen/score_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/record_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/textview_margin"
+                android:background="@drawable/gray_button"
+                android:gravity="center"
+                android:text="@string/record_title"
+                android:textSize="@dimen/record_title_text_size" />
+
+            <TextView
+                android:id="@+id/record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/record_title"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/textview_margin"
+                android:background="@drawable/light_orange_button"
+                android:gravity="center"
+                android:text="20000"
+                android:textSize="@dimen/record_text_size" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/game_interface"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_game_info">
+
+        <RelativeLayout
+            android:id="@+id/game_interface_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/game_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/game_interface"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/button_margin">
+
+        <Button
+            android:id="@+id/revert_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:text="@string/revert_name" />
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:text="@string/restart_name" />
+
+        <Button
+            android:id="@+id/options_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/button_margin"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:text="@string/options_name" />
+    </LinearLayout>
+
+</LinearLayout>
