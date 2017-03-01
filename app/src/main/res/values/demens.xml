@@ -11,10 +11,16 @@
     <dimen name="textview_padding">3dp</dimen>
     <dimen name="textview_margin">5dp</dimen>
 
+    <dimen name="config_margin_top">24dp</dimen>
+    <dimen name="view_margin_top">10dp</dimen>
+
     <dimen name="goal_text_size">40sp</dimen>
     <dimen name="score_title_text_size">25sp</dimen>
     <dimen name="score_text_size">15sp</dimen>
     <dimen name="record_title_text_size">25sp</dimen>
     <dimen name="record_text_size">15sp</dimen>
+
+    <dimen name="config_title_size">36sp</dimen>
+    <dimen name="button_text_size">24sp</dimen>
 
 </resources>

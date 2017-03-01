@@ -5,4 +5,10 @@
     <string name="revert_name">REVERT</string>
     <string name="restart_name">RESTART</string>
     <string name="options_name">OPTIONS</string>
+    <string name="config_title">Configuration</string>
+    <string name="game_lines">GameLines</string>
+    <string name="target_goal">TargetGoal</string>
+    <string name="contact_me">Contact Me</string>
+    <string name="back_button">BACK</string>
+    <string name="done_button">DONE</string>
 </resources>

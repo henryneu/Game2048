@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_view_config"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/config_margin_top"
+        android:text="@string/config_title"
+        android:textSize="@dimen/config_title_size" />
+
+    <View
+        android:id="@+id/view_id_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/text_view_config"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/view_margin_top"
+        android:background="@color/view_back_ground" />
+
+    <TextView
+        android:id="@+id/game_lines_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_id_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/game_lines"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/game_lines_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_lines_view_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle_button"
+        android:text="4"
+        android:textSize="@dimen/button_text_size" />
+
+    <TextView
+        android:id="@+id/target_goal_view_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_lines_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/target_goal"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/target_goal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/target_goal_view_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_button"
+        android:text="2048"
+        android:textSize="@dimen/button_text_size" />
+
+    <TextView
+        android:id="@+id/text_view_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/contact_me"
+        android:textSize="@dimen/button_text_size" />
+
+    <View
+        android:id="@+id/view_id_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/text_view_contact"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:background="@color/view_back_ground" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_id_2"
+        android:layout_alignLeft="@+id/view_id_2"
+        android:background="@drawable/circle_button"
+        android:text="@string/back_button"
+        android:textSize="@dimen/button_text_size"/>
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_id_2"
+        android:layout_alignRight="@+id/view_id_2"
+        android:background="@drawable/circle_button"
+        android:text="@string/done_button"
+        android:textSize="@dimen/button_text_size"/>
+</RelativeLayout>
